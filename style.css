@@ -14,3 +14,30 @@ a:hover{
 img{
 	width: 100%;
 }
+#navbar ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #000;
+	z-index: 100;
+}
+
+#navbar li{
+	float:left;
+
+}
+
+#navbar li a{
+	padding: 10px 5px;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1em;
+	text-align: center;
+	color: aliceblue;
+}
+
+#navbar li a:hover{
+	background-color: coral;
+	color:black;
+}
