@@ -14,12 +14,15 @@ a:hover{
 img{
 	width: 100%;
 }
+
+#navbar{
+	background-color: #000;
+}
 #navbar ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #000;
 	z-index: 100;
 }
 
@@ -40,4 +43,10 @@ img{
 #navbar li a:hover{
 	background-color: coral;
 	color:black;
+}
+.myicono{
+	color: aliceblue;
+	font-size: 1.5em;
+	padding: 10px;
+	display: none;
 }
