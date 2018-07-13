@@ -50,3 +50,12 @@ img{
 	padding: 10px;
 	display: none;
 }
+
+#content{
+	border: 1px solid;
+	max-width: 1180px;
+	position: relative;
+	top: 40px;
+	margin: 0 auto;
+
+}
