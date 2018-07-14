@@ -52,10 +52,17 @@ img{
 }
 
 #content{
-	border: 1px solid;
 	max-width: 1180px;
 	position: relative;
 	top: 40px;
 	margin: 0 auto;
+
+}
+
+#content header{
+	height:120px;
+	padding: 10px 20px;
+	background-color: #ddd;
+	border-radius: 1em;
 
 }
