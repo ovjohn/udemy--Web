@@ -17,6 +17,11 @@ img{
 
 #navbar{
 	background-color: #000;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 100%;
 }
 #navbar ul{
 	list-style-type: none;
@@ -32,7 +37,7 @@ img{
 }
 
 #navbar li a{
-	padding: 10px 5px;
+	padding: 20px;
 	display: inline-block;
 	text-decoration: none;
 	font-size: 1em;
@@ -54,7 +59,7 @@ img{
 #content{
 	max-width: 1180px;
 	position: relative;
-	top: 40px;
+	top: 80px;
 	margin: 0 auto;
 
 }
@@ -91,7 +96,9 @@ img{
 #content footer{
 	clear: both;
 	width: 100%;
-	background-color: dimgray;
+	background-color: #ddd ;
+	height: 100px;
+	padding: 25px;
 
 
 
