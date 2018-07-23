@@ -22,13 +22,19 @@ img{
 	top: 0;
 	display: block;
 	width: 100%;
+	z-index: 100;
+	overflow: hidden;
 }
+
 #navbar ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
-	z-index: 100;
+	
+}
+
+.lista-sm{
+	display: block;
 }
 
 #navbar li{
@@ -167,10 +173,9 @@ img{
 		width: auto;
 	}
 
-	#navbar ul{
+	.lista-sm{
 		display: none;
 	}
-	/*-------------------------------------*/
 	#navbar li{
 		float: none;
 		display: block;
