@@ -13,13 +13,13 @@
 </head>
 <body>
 	<nav id="navbar">
+		<div class="myicono"><i class="fa fa-bars" aria-hidden="true"></i><!–Iconos https://fontawesome.com-></div>
 		<ul class="lista-sm">
 			<li><a href="index.html">Inicio</a></li>
 			<li><a href="index.html">Servicios</a></li>
 			<li><a href="index.html">Acerca de</a></li>
 			<li><a href="index.html">Contactos</a></li>
 		</ul>
-		<div class="myicono"><i class="fa fa-bars" aria-hidden="true"></i><!–Iconos https://fontawesome.com-></div> 
 	</nav>
 
 	<div id="content">
@@ -68,9 +68,14 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script>
-		$(document).ready(function){
+		$(document).ready(function(){
 			//ponemos nuestro código JavaScript que utiliza jQuery
-		}
+			$('.myicono').click(function(e){
+				//console.dir(e);
+				//alert('Prueba');
+				$('#navbar ul').toggleClass('lista-sm');
+			})
+		})
 
 	</script>
 
