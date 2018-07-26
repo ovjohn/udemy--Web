@@ -15,10 +15,10 @@
 	<nav id="navbar">
 		<div class="myicono"><i class="fa fa-bars" aria-hidden="true"></i><!–Iconos https://fontawesome.com-></div>
 		<ul class="lista-sm">
-			<li><a href="index.html">Inicio</a></li>
-			<li><a href="index.html">Servicios</a></li>
-			<li><a href="index.html">Acerca de</a></li>
-			<li><a href="index.html">Contactos</a></li>
+			<li><a href="/index.html">Inicio</a></li>
+			<li><a href="/servicios.html">Servicios</a></li>
+			<li><a href="/acercade.html">Acerca de</a></li>
+			<li><a href="/contactos.html">Contactos</a></li>
 		</ul>
 	</nav>
 
@@ -70,11 +70,29 @@
 	<script>
 		$(document).ready(function(){
 			//ponemos nuestro código JavaScript que utiliza jQuery
+
+			configurarInicio();
+
 			$('.myicono').click(function(e){
 				//console.dir(e);
 				//alert('Prueba');
 				$('#navbar ul').toggleClass('lista-sm');
 			})
+
+			function configurarInicio(){
+				var urlPath = window.location.pathname;
+				console.log(urlPath);
+				$('nav a').each(function(){
+					var href = $(this).attr('href');
+					console.log(href);
+					var indice = urlPath.length - href.length;
+					console.log(urlPath.substring(indice));
+					if(urlPath.substring(indice) === href){
+						console.log('match');
+						$(this).closest('li').addClass('active');
+					}
+				})
+			}
 		})
 
 	</script>
